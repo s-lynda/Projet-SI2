@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statiqtiques</title>
+</head>
+<body>
+  
+</body>
+</html>
+<div class="container-xxl px-md-5 bg-white shadow-lg">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+   <img src="{% static "app/media/ESI_Logo.png" %}" class="d-block mx-lg-auto img-fluid" width="229" height="65" alt=ESILogo" />
+    </a>
+<!-- elts de la barre de navigation "nav bar"-->
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+  <li><a href="/home" class="nav-link px-2 link-secondary">Accueil</a></li>
+  <li><a href="{% url 'affiche_eng' %}" class="nav-link px-2 link-secondary">Encadreurs</a></li>
+  <li><a href="{% url 'affiche_mmbr' %}"class="nav-link px-2 link-secondary">Promoteurs</a></li>
+  <li><a href="{% url 'affiche_stgr' %}" class="nav-link px-2 link-secondary">Stagiares</a></li>
+  <li><a href="{% url 'affiche_Stages' %}" class="nav-link px-2 link-secondary">Stages</a></li>
+  <li><a href="{% url 'affiche_ent' %}" class="nav-link px-2 link-secondary">Entreprises</a></li>
+  <li><a href="{% url 'graphePage' %}" class="nav-link px-2 link-secondary">Statistiques</a></li>
+</ul>
+
+    <div class="dol-md-3 text-end">
+        <form method="get" action="">
+            <a href="/search" class='btn  btn-outline-dark'>Recherche</a>
+        </form>
+    </div>
+
+</header>
+</div>
